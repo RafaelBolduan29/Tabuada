@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Leitura do número
+        System.out.print("Digite um número para ver a tabuada: ");
+        int numero = scanner.nextInt();
+
+        // Impressão da tabuada
+        imprimirTabuada(numero);
+    }
+
+    // Método para imprimir a tabuada
+    public static void imprimirTabuada(int numero) {
+        System.out.println("\nTabuada do " + numero + ":");
+        for (int i = 0; i <= 10; i++) {
+            System.out.printf("%d x %d = %d\n", numero, i, numero * i);
+        }
+    }
+}
